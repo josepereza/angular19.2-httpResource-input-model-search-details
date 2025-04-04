@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<app-filter [(filterCriteria)]='listFilter'></app-filter>
+
+@if(texto()){
+    <app-list-products [listCriteria]='texto()'></app-list-products>
+}@else {
+
+    <app-list-products [listCriteria]="'a'"></app-list-products>
+
+}

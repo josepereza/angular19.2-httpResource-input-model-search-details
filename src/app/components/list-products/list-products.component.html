@@ -1,0 +1,17 @@
+<p>list-products works!</p>
+ @if(productos.value()){
+
+
+<ul>
+    @for (item of filteredProducts(); track $index) {
+  <li>
+    <a routerLink="/details/{{ item.id}}">
+   {{item.title}}
+  </a>
+    </li>
+
+    }@empty { No snacks available that match the filter }
+  
+</ul>
+
+ }

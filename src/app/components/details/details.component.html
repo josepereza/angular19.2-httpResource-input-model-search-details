@@ -1,0 +1,10 @@
+
+
+<h1>Detail</h1>
+{{id()}}
+
+@if(!producto.isLoading() && producto.hasValue()) {
+    @let product = producto.value();
+    <h4>{{ product.title}}</h4>
+    <p>{{ product.description }}</p>
+}
