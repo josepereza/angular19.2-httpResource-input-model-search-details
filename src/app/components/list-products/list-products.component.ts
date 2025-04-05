@@ -1,10 +1,11 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { RouterLink } from '@angular/router';
+import { ItemProductComponent } from '../item-product/item-product.component';
 
 @Component({
   selector: 'app-list-products',
-  imports: [RouterLink],
+  imports: [RouterLink,ItemProductComponent],
   templateUrl: './list-products.component.html',
   styleUrl: './list-products.component.css'
 })

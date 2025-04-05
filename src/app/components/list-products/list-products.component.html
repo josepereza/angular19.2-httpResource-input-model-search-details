@@ -5,9 +5,7 @@
 <ul>
     @for (item of filteredProducts(); track $index) {
   <li>
-    <a routerLink="/details/{{ item.id}}">
-   {{item.title}}
-  </a>
+   <app-item-product [producto]="item"></app-item-product>
     </li>
 
     }@empty { No snacks available that match the filter }
